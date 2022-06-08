@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+</head>
+<body>
+    <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <h1> <img src="https://maybanhang.net/wp-content/uploads/2016/01/dau-tich-mau-xanh.png" alt="tick" style="width:30px;"> Regisstration</h1>
+    <h3><span style="font-size:20px ; color:rgb(101, 224, 101) ">Account Details</span></h3>
+    <table width="800px">
+        <tbody>
+            <tr>
+                <th>Email <span style="color:red ;">*</span></th>
+                <th><input type="email" required width="90px"></th>
+                <th>Reqeat Email <span style="color:red ;">*</span></th>
+                <th><input type="email" required width="90px"></th>
+            </tr>
+            <tr>
+                <th>Password <span style="color:red ;">*</span></th>
+                <th><input type="password" required width="90px"></th>
+                <th>Repeat Password <span style="color:red ;">*</span></th>
+                <th><input type="password" required width="90px"></th>
+                <th><span style="color:red ;">*</span>Obligatory Field</th>
+            </tr>
+        </tbody>
+    </table>
+    <table width="800px">
+        <thead>
+            <td colspan="2"><span style="font-size:20px ; color:rgb(101, 224, 101) ">Personal Details</span></td>
+            <td colspan="2"><span style="font-size:20px ; color:rgb(101, 224, 101) ">Further Information</span></td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Name <span style="color:red ;">*</span></th>
+                <td><input type="text" required style="width: 250px ;"></td>
+                <th>Gender <span style="color:red ;">*</span></th>
+                <td><input type="radio" required name="gender">Male <input type="radio" name="gender">Female</td>
+            </tr>
+            <tr>
+                <th>Phone <span style="color:red ;">*</span></th>
+                <td><input type="tel" required style="width: 150px ;"></td>
+                <th>Birthdate <span style="color:red ;">*</span></th>
+                <td><select name="day">
+                    <option value="day1">Day</option>
+                    <option value="day2">1</option>
+                    <option value="day3">2</option>
+                    <option value="day4">3</option>
+                    <option value="day5">4</option>
+                    <option value="day6">5</option>
+                    <option value="day7">6</option>
+                    <option value="day8">7</option>
+                    <option value="day9">8</option>
+                    <option value="day10">9</option>
+                    <option value="day11">10</option>
+                    <option value="day12">11</option>
+                    <option value="day13">12</option>
+                    <option value="day14">13</option>
+                    <option value="day15">14</option>
+                    <option value="day16">15</option>
+                    <option value="day17">16</option>
+                    <option value="day18">17</option>
+                    <option value="day19">18</option>
+                    <option value="day20">19</option>
+                    <option value="day21">20</option>
+                    <option value="day22">21</option>
+                    <option value="day23">22</option>
+                    <option value="day24">23</option>
+                    <option value="day25">24</option>
+                    <option value="day26">25</option>
+                    <option value="day27">26</option>
+                    <option value="day28">27</option>
+                    <option value="day29">28</option>
+                    <option value="day30">29</option>
+                    <option value="day31">30</option>
+                    <option value="day32">31</option>
+                </select>
+                <select name="month" style="width:60px;">
+                    <option value="month1">Month</option>
+                    <option value="month2">January</option>
+                    <option value="month3">February</option>
+                    <option value="month4">March</option>
+                    <option value="month5">April</option>
+                    <option value="month6">May</option>
+                    <option value="month7">June</option>
+                    <option value="month8">July</option>
+                    <option value="month9">August</option>
+                    <option value="month10">September</option>
+                    <option value="month11">October</option>
+                    <option value="month12">November</option>
+                    <option value="month13">December</option>
+                </select>
+                <input type="text" required style="width:50px;"></td>
+            </tr>  
+            <tr>
+                <th>Street</th>
+                <td><input type="text" style="width: 250px ;"></td>
+                <th>Nationality <span style="color:red ;">*</span></th>
+                <td><select name="nationality">
+                    <option value="nationality4">Nationality</option>
+                    <option value="nationality">Việt Nam</option>
+                    <option value="nationality1">Mỹ</option>
+                    <option value="nationality2">Nhật Bản</option>
+                    <option value="nationality3">Hàn Quốc</option>
+                    <option value="nationality4">Pháp</option>
+                    <option value="nationality5">Anh Quốc</option>
+                    <option value="nationality6">Trung Quốc</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>City <span style="color:red ;">*</span></th>
+                <td><input type="text" required required style="width: 250px ;"></td>
+                <th>Children <span style="color:red ;">*</span></th>
+                <td><input type="checkbox" required></td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td><select name="country" style="width:100px">
+                    <option value="country">Country</option>
+                    <option value="country1">Huế</option>
+                    <option value="country2">Hà Nội</option>
+                    <option value="country3">Sài Gòn</option>
+                    <option value="country4">New York</option>
+                    <option value="country5">Tokyo</option>
+                    <option value="country6">Bắc Kinh</option>
+                    <option value="country7">Lôn Đôn</option>
+                    <option value="country8">Paris</option>
+                    <option value="country9">Texas</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td><input type="text" value="http://"></td>
+            </tr>
+            <tr>
+                <th colspan="2"></th>
+                <td colspan="3"> <span style=" background-color: rgb(101, 224, 101); font-size:25px ;">Helpful Information</span>
+                <p>Notification form is a common pattern used in daily life in agencies, organizations and businesses when it is necessary to notify an issue or a certain content to an individual in the unit.</p></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3><span style="font-size:20px ; color:rgb(101, 224, 101) ">Terms and Conditions</span></h3>
+    <table>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" required><span style="color:red ;">*</span> i accept the Terms and Conditions.</td>
+                <th rowspan="2"><input type="submit" name="submit" value="Register" style="width: 150px; font-size:large; height:50px; background-color:rgb(101, 224, 101)"></th>
+            </tr>
+            <tr>
+                <td><input type="checkbox">I want to receive personalized offers by your site.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Allow partners to send me personalized offers and related services.</td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+    
+</body>
+</html>
