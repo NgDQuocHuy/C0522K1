@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tao Form Co Ban</title>
+    <style>
+        .wufoo {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <Form method="get" action="simpleform.html" class="wufoo">
+        <h1>Order Form</h1>
+    <p>What would you like to buy?</p>
+        <select>
+            <option value="">A</option>
+            <option value="">B (+ 0.5$)</option>
+            <option value="">C (+ 0.5$)</option>
+        </select>
+    <p>How many would you like to order?</p>
+        <input type="radio" name="mon"> 1 -$10 <br>
+        <input type="radio" name="mon"> 2 -$20 <br>
+        <input type="radio" name="mon"> 3 -$25 <br>
+    <p>Name <span style="color:red">*</span></p>
+        <input type="text" name="firstname" placeholder="FirstName" size="15">
+        <input type="text" name="Lastname"  placeholder="LastName" size="15">
+    <p>Email</p>
+        <input type="text" name="Email" placeholder="Email" size="35">
+    <p>Phone Number</p>
+        <input type="text" name="Telephone1" size="5">
+        <input type="text" name="Telephone2" size="5">
+        <input type="text" name="Telephone3" size="5">
+        <p><input type="button" name="Submit" value="Submit"></p>
+
+    </Form>
+    
+</body>
+</html>
