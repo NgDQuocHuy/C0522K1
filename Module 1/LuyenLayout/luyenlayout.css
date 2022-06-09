@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#graper{
+    width: 800px;
+    margin: auto;
+
+}
+#header{
+    width: 800px;
+    height: 80px;
+    background-color: pink;
+}
+#menu{
+    width: 800px;
+    height: 40px;
+    background-color: blue;
+}
+#left{
+    width: 200px;
+    height: 400px;
+    background-color: cadetblue;
+    float: left;
+}
+#conten{
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    float: left;
+}
+#right{
+    width: 200px;
+    height: 400px;
+    background-color: blanchedalmond;
+    float: right;
+}
+#footer{
+    width: 800px;
+    height: 60px;
+    background-color: crimson;
+    clear: both;
+}
