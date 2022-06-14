@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <table>
+            <tr>
+                <th colspan="4">Máy Tính</th>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="number" id="number1"></td>
+                <td colspan="2"><input type="number" id="number2"></td>
+            </tr>
+            <tr>
+                <th><button onclick="cong()" style="color:Red ;">Cộng</button></th>
+                <th><button onclick="tru()">Trừ</button></th>
+                <th><button onclick="nhan()">Nhân</button></th>
+                <th><button onclick="chia()">Chia</button></th>
+            </tr>
+        </table>
+    </table>
+    <br>
+    <h4>Result</h4>
+    <div id="result">Kết quả nằm ở đây</div>
+    <script>
+        function cong() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = Number(number1) + Number(number2);
+            document.getElementById("result").innerHTML = result;
+        }
+        function tru() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = Number(number1) - Number(number2);
+            document.getElementById("result").innerHTML = result;
+        }
+        function nhan() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = Number(number1) * Number(number2);
+            document.getElementById("result").innerHTML = result;
+        }
+        function chia() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = Number(number1) / Number(number2);
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
