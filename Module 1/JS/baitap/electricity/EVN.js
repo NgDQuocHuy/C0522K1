@@ -62,6 +62,8 @@ function reset() {
     document.getElementById("bac5").value = null;
     document.getElementById("bac6").value = null;
     document.getElementById("total").value = null;
+    document.getElementById("VAT").value = null;
+    document.getElementById("all").value = null;
     document.getElementById("used").value = null;
     document.getElementById("used").focus();
 }
