@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch Case</title>
+</head>
+
+<body>
+    <script>
+        var tncn = prompt('Nhập tiền lương ');
+        switch (true) {
+            case (tncn > 0 && tncn <= 5000000):
+                alert(phaidong = (tncn / 100) * 5 + ' VND');
+                break;
+            case (tncn > 5000000 && tncn <= 10000000):
+                alert(phaidong = (tncn / 100) * 10 + ' VND')
+                break;
+            case (tncn > 10000000 && tncn <= 18000000):
+                alert(phaidong = (tncn / 100) * 15 + ' VND');
+                break;
+            case (tncn > 18000000 && tncn <= 32000000):
+                alert(phaidong = (tncn / 100) * 20 + ' VND');
+                break;
+            case (tncn > 32000000 && tncn <= 52000000):
+                alert(phaidong = (tncn / 100) * 25 + ' VND');
+                break;
+            case (tncn > 52000000 && tncn <= 80000000):
+                alert(phaidong = (tncn / 100) * 30 + ' VND');
+                break;
+            case (tncn > 80000000):
+                alert(phaidong = (tncn / 100) * 35 + ' VND');
+                break;
+            default:
+                alert('Không có dữ liệu nhập');
+                break;
+        }
+    </script>
+</body>
+
+</html>
