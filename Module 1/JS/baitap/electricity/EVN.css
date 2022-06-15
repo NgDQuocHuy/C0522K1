@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.VND{
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-align: right;
+}
+table td{
+    padding: 5px;
+}
+table{
+    width: 100%;
+}
+.to{
+    width: 600px;
+    margin: 10px auto;
+    background-color: rgb(109, 231, 225);
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(5, 0, 0);
+}
+.head{
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+.total{
+    font-size: 20px;
+    color: red;
+}
+.reset{
+    padding: 15px 15px;
+    color: red;
+    font-size:larger;
+    border-radius: 10px;
+}
+.check{
+    padding: 15px 15px;
+    color: blue;
+    font-size: larger;
+    border-radius: 10px;
+}
+.sub{
+    text-align: center;
+}

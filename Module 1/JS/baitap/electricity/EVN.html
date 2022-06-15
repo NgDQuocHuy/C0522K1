@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="EVN.css">
+</head>
+
+<body>
+    <div class="to">
+        <table>
+            <tr>
+                <td colspan="2" class="head">TÍNH TIỀN ĐIỆN SINH HOẠT</td>
+            </tr>
+            <tr>
+                <td>Điện năng tiêu thụ (KWh)</td>
+                <td><input class="VND" type="number" id="used"></td>
+            </tr>
+            <tr>
+                <td><label for="bac1">Bậc thang 1 (1678đ/KWh)</label></td>
+                <td><input class="VND" type="text" id="bac1" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="bac2">Bậc thang 2 (1734đ/KWh)</label></td>
+                <td><input class="VND" type="text" id="bac2" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="bac3">Bậc thang 3 (2014đ/KWh)</label></td>
+                <td><input class="VND" type="text" id="bac3" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="bac4">Bậc thang 4 (2536đ/KWh)</label></td>
+                <td><input class="VND" type="text" id="bac4" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="bac5">Bậc thang 5 (2834đ/KWh)</label></td>
+                <td><input class="VND" type="text" id="bac5" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="bac6">Bậc thang 6 (2927đ/KWh)</label></td>
+                <td><input class="VND" type="text" id="bac6" readonly></td>
+            </tr>
+            <tr>
+                <td class="total"><label for="total">Tổng tiền (chưa VAT) </label></td>
+                <td><input class="VND" type="text" id="total" readonly></td>
+            </tr>
+            <tr>
+                <td class="total"><label for="VAT">Thuế VAT (10%) </label></td>
+                <td><input class="VND" type="text" id="VAT" readonly></td>
+            </tr>
+            <tr>
+                <td class="total"><label for="all">Tổng tiền phải đóng </label></td>
+                <td><input class="VND" type="text" id="all" readonly></td>
+            </tr>
+            <tr class="sub">
+                <td><button id="button" class="check" onclick="check()">Tính Toán</button></td>
+                <td><button id="botton" class="reset" onclick="reset()">Tải lại</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="EVN.js"></script>
+</body>
+
+</html>
