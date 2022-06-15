@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch</title>
+</head>
+
+<body>
+    <h1>Tìm ngày theo tháng</h1>
+    <input type="number" id="month" min="1" max="12" style="width:10%">
+    <button onclick="check()">Tính số ngày</button>
+    <p id="result">Đây là chỗ hiển thị kết quả.</p>
+    <script>
+        let thang1 = "1";
+        let thang2 = "2";
+        let thang3 = "3";
+        let thang4 = "4";
+        let thang5 = "5";
+        let thang6 = "6";
+        let thang7 = "7";
+        let thang8 = "8";
+        let thang9 = "9";
+        let thang10 = "10";
+        let thang11 = "11";
+        let thang12 = "12";
+        function check() {
+            let month = document.getElementById("month").value;
+            switch (month) {
+                case thang1:
+                case thang3:
+                case thang5:
+                case thang7:
+                case thang8:
+                case thang10:
+                case thang12:
+                    document.getElementById("result").innerHTML = "Tháng " + month + " có 31 ngày.";
+                    break;
+                case thang4:
+                case thang6:
+                case thang9:
+                case thang11:
+                    document.getElementById("result").innerHTML = "Tháng " + month + " có 30 ngày.";
+                    break;
+                case thang2:
+                    document.getElementById("result").innerHTML = "Tháng " + month + " có 28 hoặc 29 ngày.";
+                    break;
+                default:
+                    document.getElementById("result").innerHTML = "Vui lòng nhập lại tháng.";
+            }
+        }
+    </script>
+</body>
+
+</html>
