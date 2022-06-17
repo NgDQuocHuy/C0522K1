@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><input type="checkbox" id="check1" onclick="switchGood()"></td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="check2" onclick="switchCheap()"></td>
+            <td>Cheap</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="check3" onclick="switchFast()"></td>
+            <td>Fast</td>
+        </tr>
+    </table>
+    <script>
+
+        const isGood = document.getElementById("check1");
+        const isCheap = document.getElementById("check2");
+        const isFast = document.getElementById("check3");
+        function switchGood() {
+            console.log(isGood, isCheap, isFast);
+            if (isCheap && isFast) {
+                if (Math.random() < 0.5) {
+                    isCheap.checked = false;
+                } else {
+                    isFast.checked = false;
+                }
+            }
+        }
+        function switchCheap() {
+            console.log(isGood, isCheap, isFast);
+            if (isGood && isFast) {
+                if (Math.random() < 0.5) {
+                    isGood.checked = false
+                } else {
+                    isFast.checked = false
+                }
+            }
+        }
+        function switchFast() {
+            console.log(isGood, isCheap, isFast);
+            if (isGood && isCheap) {
+                if (Math.random() < 0.5) {
+                    isCheap.checked = false
+                } else {
+                    isFast.checked = false
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
