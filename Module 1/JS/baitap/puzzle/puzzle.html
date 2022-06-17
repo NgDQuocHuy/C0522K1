@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 800px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><img id="img1" onclick="random(1)" src="puzzle/1_1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img2" onclick="random(2)" src="puzzle/2_1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img3" onclick="random(3)" src="puzzle/3_1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img4" onclick="random(4)" src="puzzle/4_1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img5" onclick="random(5)" src="puzzle/5_1.jpg" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        const min = 1;
+        const max = 3;
+        const win_1 = "http://127.0.0.1:5500/puzzle/1_1.jpghttp://127.0.0.1:5500/puzzle/2_1.jpghttp://127.0.0.1:5500/puzzle/3_1.jpghttp://127.0.0.1:5500/puzzle/4_1.jpghttp://127.0.0.1:5500/puzzle/5_1.jpg";
+        const win_2 = "http://127.0.0.1:5500/puzzle/1_2.jpghttp://127.0.0.1:5500/puzzle/2_2.jpghttp://127.0.0.1:5500/puzzle/3_2.jpghttp://127.0.0.1:5500/puzzle/4_2.jpghttp://127.0.0.1:5500/puzzle/5_2.jpg";
+        const win_3 = "http://127.0.0.1:5500/puzzle/1_3.jpghttp://127.0.0.1:5500/puzzle/2_3.jpghttp://127.0.0.1:5500/puzzle/3_3.jpghttp://127.0.0.1:5500/puzzle/4_3.jpghttp://127.0.0.1:5500/puzzle/5_3.jpg";
+        const url = "http://127.0.0.1:5500/"
+        let img1 = document.getElementById("img1");
+        let img2 = document.getElementById("img2");
+        let img3 = document.getElementById("img3");
+        let img4 = document.getElementById("img4");
+        let img5 = document.getElementById("img5");
+        let m = url + img1.src + url + img2 + url + img3 + url + img4 + url + img5;
+        function random(row) {
+            let imgrd = Math.floor(Math.random()*(max - min + 1) + min);
+            document.getElementById(`img${row}`).src = `puzzle/${row}_${imgrd}.jpg`;
+            if( m = win_1)  {
+                alert("You Win");
+                console.log(win)
+            } 
+            else if( m = win_2) {
+                alert("You Win");
+            } 
+            else if ( m = win_3) {
+                alert("You Win");
+            }         
+        }
+    </script>
+    <Script src="puzzle.js"></Script>
+</body>
+</html>
