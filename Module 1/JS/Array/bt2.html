@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // yêu cầu người dùng nhập vào size, min, max
+        // tạo ra mảng number có kích cỡ là size và các giá trị của mảng trong [min, max]
+        // 1. Hiển thị mảng number ra màn hình
+        // 2. TÍnh tổng các số lẻ có trong mảng number và hiển thị ra màn hình
+        // 3. Đếm xem có bao nhiêu số nguyên tố có trong mảng number và hiển thị ra màn hình
+        // 4. Đếm xem có bao nhiêu só chính phương có trong mảng và hiển thị  ra màn hình
+        let size = Number(prompt("Nhập size: "));
+        let min = Number(prompt("Nhập min: "));
+        let max = Number(prompt("Nhập max: "));
+        let number = [];
+        let total = 0;
+        let count = 0;
+        let uoc = 0;
+        for (let i = 0; i < size; i++) {
+            number[i] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        for (let i = 0; i < number.length; i++) {
+            document.write(`${number[i]} <br>`);
+        }
+        for (let i = 0; i < size; i++) {
+            if (number[i] % 2 != 0) {
+                total += number[i];
+            }
+        }
+        document.write("<br>");
+        document.write(`"Tổng số lẻ là "${total}`);   
+    </script>
+</body>
+
+</html>

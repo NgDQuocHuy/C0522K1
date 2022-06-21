@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let size = Number(prompt("Nhập size: "));
+        // let number = [];
+        // for (let i = 0; i < size; i++) {
+        //     number[i] = Number(prompt(`Nhập số(${i}) = `));
+        // }
+        // for (let i = 0; i < number.length; i++) {
+        //     document.write(`${number[i]} <br>`);
+        // }
+        //         Nhập số ramdom
+        // let size = Number(prompt("Nhập size: "));
+        // let min = Number(prompt("Nhập min: "));
+        // let max = Number(prompt("Nhập max: "));
+        // let number = [];
+        // for (let i = 0; i < size; i++) {
+        //     number[i] = Math.floor(Math.random()*(max - min + 1) + min);
+        // }
+        // for (let i = 0; i < number.length; i++) {
+        //     document.write(`${number[i]} <br>`);
+        // }
+
+
+        // yêu cầu người dùng nhập vào size, min, max
+        // tạo ra mảng number có kích cỡ là size và các giá trị của mảng trong [min, max]
+        // 1. Hiển thị mảng number ra màn hình
+        // 2. TÍnh tổng các giá trị có trong mảng number và hiển thị ra màn hình
+        // 3. Đếm xem có báo nhiêu giá trị là số chẵn có trong mảng number và hiển thị ra màn hình
+        // 4. Kiểm tra xem trong mảng number có giá trị v = 15 không?
+        // nếu có thì hiển thị: 15 có trong mảng number 
+        // nếu không có thì hiển thị: 15 không có trong mảng number
+
+        let size = Number(prompt("Nhập size: "));
+        let min = Number(prompt("Nhập min: "));
+        let max = Number(prompt("Nhập max: "));
+        let number = [];
+        let total = 0;
+        let V = 15
+        for (let i = 0; i < size; i++) {
+            number[i] = Math.floor(Math.random()*(max - min + 1) + min);
+            total += number[i];
+            // if (number[i] % 2 == 0) {
+            //     document.write("số chẳn là: " + number[i] + "<br>");
+            // }   
+        }
+        for (let i = 0; i < number.length; i++) {
+            document.write(`${number[i]} <br>`);
+        }
+        document.write("tổng các số là " + total);
+        if (V == number[i]) {
+            document.write("có số 15")
+        } else {
+            document.write("không có số 15")
+        }
+    </script>
+</body>
+
+</html>
