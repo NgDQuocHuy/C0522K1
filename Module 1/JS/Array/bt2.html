@@ -22,7 +22,8 @@
         let number = [];
         let total = 0;
         let count = 0;
-        let uoc = 0;
+        let flag = true;
+        let scp = 0;
         for (let i = 0; i < size; i++) {
             number[i] = Math.floor(Math.random() * (max - min + 1) + min);
         }
@@ -35,7 +36,36 @@
             }
         }
         document.write("<br>");
-        document.write(`"Tổng số lẻ là "${total}`);   
+        document.write(`Tổng số lẻ là: ${total} <br>`);
+        document.write("Các số nguyên tố là: <br>") 
+        for (let i = 0; i < size; i++) {
+            if (number[i] > 1) {
+                for (let j = 2; j < number[i]; j++) {
+                    if (number[i] % j == 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) {
+                    document.write(number[i] + "<br>");
+                    count += 1;
+                }
+                else {
+                    flag = true;
+                }
+            }
+        }
+        document.write("<br>");
+        document.write(`Đếm số nguyên tố: ${count} <br>`)
+        document.write("Các số chính phương là: <br>") 
+        for (let i = 0; i < size; i++) {
+            if (Number.isInteger(Math.sqrt(number[i]))) {
+                scp += 1;
+                document.write(`${number[i]} <br>`); 
+            } 
+        }
+        document.write("<br>");
+        document.write(`Tổng số chính phương có là: ${scp}`);
     </script>
 </body>
 
