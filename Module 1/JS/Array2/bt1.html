@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+//          Bài tập 1
+        let myColor = ["Red", "Green", "White", "Black"]
+        console.log(myColor.toString());
+//          Bài tập 2
+        const num = window.prompt() ;
+        const str = num.toString();
+        const result = [str[0]];
+        for (let i = 1; i < str.length; i++) {
+            if(str[i-1] % 2 === 0 && str[i] % 2 === 0) {
+                result.push('-', str[i]);
+            } else {
+                result.push(str[i])
+            }
+        }
+        console.log(result.join(''));
+//          Bài tập 3
+        var str1 = 'c';
+        var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var lower = 'abcdefghijklmnopqrstuvwxyz';
+        var result1 = [];
+            for(let i = 0; i < str1.length; i++) {
+                if (upper.indexOf(str1[i]) !== -1) {
+                    result1.push(str1[i].toLowerCase());
+                } else if (lower.indexOf(str1[i] !== 1)) {
+                    result1.push(str1[i].toUpperCase());
+                } else {
+                    result1.push(str1[i]);
+                }
+            }
+            console.log(result1.join(''));
+    </script>
+</body>
+
+</html>
