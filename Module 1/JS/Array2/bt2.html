@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="string">Nhập từ</label>
+    <input type="text" id="string">
+    <button onclick="trans()">Dịch</button>
+    <input type="text" id="result" readonly >
+    <script>
+        function trans() {
+            let eng = ["banana", "apple", "pen", "pencil", "book"];
+            let vie = ["chuối", "táo", "bút", "bút chì", "sách"];
+            let string = document.getElementById("string").value;
+            let index_eng = 0;
+            let result = "";
+            for (let i = 0; i < eng.length; i++) {
+                if (string == eng[i]) {
+                    index_eng = i;
+                    for (let j = 0; j < vie.length; j++) {
+                        if (index_eng == j) {
+                            result = vie[j];
+                        }
+                    }
+                }
+            }
+            document.getElementById("result").value = result;
+        }
+    </script>
+</body>
+
+</html>
