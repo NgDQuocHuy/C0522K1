@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let row = 7
+        // let cell = 5
+        // let number = []
+        // let min = 10
+        // let max = 30
+        // for (let i = 0; i < row; i++) {
+        //     for (let j = 0; j < cell; j++) {
+        //         number[j] = Math.floor(Math.random() * (max - min + 1) + min);
+        //     }
+        // }
+        // console.log(number[j])
+
+        let row = 5;
+        let cell = 7;
+        let min = 10;
+        let max = 30;
+        let matrix = [];
+        for (let r = 0; r < row; r++) {
+            let number = []
+            for (let c = 0; c < cell; c++) {
+
+                number[c] = Math.floor(Math.random() * (max - min + 1) + min);
+            }
+            matrix[r] = number;
+        }
+        console.log(matrix)
+        
+
+    </script>
+</body>
+
+</html>
