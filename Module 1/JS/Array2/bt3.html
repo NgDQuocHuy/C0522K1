@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Cờ Caro đơn giản</h3>
+    <p id="carogame"></p>
+    <button onclick="change()">Tick Vào</button>
+    <script>
+        let b = document.getElementById("carogame");
+        let data = "";
+        let board = [];
+        var h = 1;
+        for (let i = 0; i < 5; i++) {
+            board[i] = ['(.)', '(.)', '(.)', '(.)', '(.)'];
+        }
+        for (let i = 0; i < 5; i++) {
+            data += "<br>";
+            for (let j = 0; j < 5; j++) {
+                data += `${board[i][j]} `;
+            }
+        }
+        b.innerHTML = data;
+        function change() {
+            data = "";
+            let row = parseInt(prompt("Nhập số hàng: "));
+            let cell = parseInt(prompt("Nhập số cột: "));
+            if (h % 2 == 0) {
+                board[row][cell] = "X";
+            } else {
+                board[row][cell] = "O";
+            }
+            h++;
+            for (let i = 0; i < 5; i++) {
+                data += "<br>";
+                for (let j = 0; j < 5; j++) {
+                    data += `${board[i][j]}`;
+                }
+            }
+            b.innerHTML = data;
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j < 5; j++) {
+                    if (board[i][j] === "X" && board[i][j + 1] === "X" && board[i][j + 2] === "X" ||
+                        board[i][j] === "X" && board[i + 1][j] === "X" && board[i + 2][j] === "X") {
+                        alert("X Win");
+                    } else if (board[i][j] === "O" && board[i][j + 1] === "O" && board[i][j + 2] === "O" ||
+                        board[i][j] === "O" && board[i + 1][j] === "O" && board[i + 2][j] === "O") {
+                            alert("O Win");
+                        }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
