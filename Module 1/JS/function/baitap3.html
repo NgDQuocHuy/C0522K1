@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 1
+        alert("Xin chào");
+
+        // Bài 2
+        let number = Number(prompt("Nhập số:"));
+        function numberPlus(number) {
+            number += 1;
+            return number;
+        }
+        alert("Giá trị mới của số: " + numberPlus(number));
+
+        // Bài 3
+        let a = Number(prompt("Nhập số thứ 1:"));
+        let b = Number(prompt("Nhập số thứ 2:"));
+        function compare(a, b) {
+            if (a > b) {
+                alert(a + " lớn hơn " + b);
+                return;
+            } {
+                total = a + b;
+                alert("Tổng của 2 số là: " + total);
+            }
+        }
+        compare(a, b);
+
+        // Bài 4
+        function addNumbers() {
+            firstNum = 4;
+            secondNum = 8;
+            result = firstNum + secondNum;
+            alert(result + " sau khi gọi hàm");
+            return result;
+        }
+        result = 0;
+        alert(result + " trước khi gọi hàm");
+        result = addNumbers(); 
+
+        
+    </script>
+    <script src="baitap3.js"></script>
+</body>
+
+</html>
