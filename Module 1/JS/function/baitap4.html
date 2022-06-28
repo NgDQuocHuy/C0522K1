@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Bài 1
+        let number = Number(prompt("Nhập số:"))
+        function square(number) {
+            resultSquare = number * number;
+            return resultSquare;
+        }
+        document.write("Bình phương của số là: " + square(number) + "<br>")
+        square(number);
+
+        // Bài 2
+        var R = Number(prompt("Nhập bán kính:"))
+        function area (R) {
+            S = R * R * 3.14;
+            return S;
+        }
+        document.write("Diện tích hình tròn là: " + area(R) + "<br>");
+        area(R);
+        
+        function perimeter(R) {
+            C = 3.14 * 2 * R
+            return C
+        }
+        document.write("Chu vi hình tròn là: " + perimeter(R) + "<br>");
+        perimeter(R);
+
+        // Bài 3
+        let n = Number(prompt("Nhập N!:"));
+        function factorial(n) {
+            let product = 1
+            for (let i = 1; i <= n; i++) {
+                product = product * i;
+            }
+            return product;
+        }
+        document.write("Giai thừa của n là: " + factorial(n) + "<br>");
+        factorial(n);
+
+        // Bài 4
+        let input = Number(prompt("Nhập gì đó bất kỳ:"));
+        function checkInput(input) {
+           for (let i = 0; i <= 9; i++) {
+            if (input === i) {
+                return document.write("Đây là ký tự số");
+            } 
+           }
+           return document.write("Đây không phải là ký tự số");
+        }
+        checkInput(input);
+
+        // Bài 5
+    </script>
+</body>
+</html>
