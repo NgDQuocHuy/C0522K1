@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var foot = prompt("enter foot: ");
+        function footToMeter(foot) {
+            meter = 0.305 * foot;
+            return meter;
+        }
+        var meter1 = prompt("enter meter: ");
+        function meterToFoot(meter1) {
+            foot = 3.279 * meter1;
+            return foot;
+        }
+        document.write(foot + " foot " + "= " + footToMeter(foot) + " meter" + "<br>");
+        document.write(meter1 + " meter " + "= " + meterToFoot(meter1) + " foot" + "<br>");
+    </script>
+</body>
+</html>
